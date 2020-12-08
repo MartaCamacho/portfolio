@@ -20,7 +20,7 @@ function App() {
             <img className="intro-img" src="/images/FotoIH.jpg" alt="me" />
       </section>
 
-      <section className="my-services" id="services">
+      <section className="my-services" id="what-i-do">
         <h2 className="section-title section-title-services"> What I do</h2>
             <div className="services">
               <div className="service">
@@ -44,7 +44,7 @@ function App() {
           <a href="https://bit.ly/3lWiuzv" className="btn" target="_blank" rel="noreferrer">CV</a>
       </section>
             
-      <section className="about-me" id="#about">
+      <section className="about-me" id="about">
           <h2 className="section-title section-title-about">About me</h2>
           <p className="section-subtitle section-subtitle-about">Developer based in Barcelona</p>
           <div className="about-me-body">
