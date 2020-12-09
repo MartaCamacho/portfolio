@@ -8,7 +8,6 @@ export default class Projects extends Component {
         this.state = { listOfProjects: [] }
       }
 
-
         getAllProjects = async () => {
             try {
                 const res = await service.allProjects();
@@ -20,7 +19,6 @@ export default class Projects extends Component {
                 this.getAllProjects();
               }
 
-
     render() {
         return (
             <div>
@@ -31,11 +29,9 @@ export default class Projects extends Component {
                     { this.state.listOfProjects ? this.state.listOfProjects.map((project, index) => {
                     return (
                         <div className="portfolio-item" key={index}>
-                            <div className="portfolio-item-title">
-                            <a href={project.url} >
-                            <p>{project.title}</p>
+                            <a className="portfolio-item-title" href={project.url} target="_blank" rel="noreferrer">
+                            <p >{project.title}</p>
                             </a>
-                            </div>
                             <div className="portfolio-item-body">
                             <p>Description: {project.description}</p>
                             <p>For this project was used: {project.used}</p>

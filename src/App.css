@@ -140,12 +140,14 @@ header {
 	flex-direction: column;
 	max-width: 100px;
 	position: fixed;
+	z-index: 100;
 }
 
 .logo-link {
 	color: var(--clr-accent);
 	margin-right: 1rem;
 	font-size: var(--fs-h3);
+	
 }
 
 .nav {
@@ -301,9 +303,10 @@ header {
 
 .my-services{
 	background-color: var(--clr-dark);
-	/* background-image: url('../public/images/background-laptop-cactus.jpg'); */
+	background-image: url('./public/images/background-laptop-cactus.jpg');
 	background-size: cover;
-	/* background-blend-mode: multiply; */
+	background-blend-mode: multiply;
+	opacity: 0.85;
 	color: var(--clr-light);
 	text-align: center;
 }
@@ -398,7 +401,7 @@ header {
 	}
 }
 
-/* PORTFOLIO */
+/* MY PROJECTS */
 
 .my-work {
 	background-color: var(--clr-dark);
@@ -419,25 +422,28 @@ header {
 	height: 95%;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 0.2rem;
 	width: 100%;
 	margin: 0.5rem;
+	vertical-align: middle;
+    line-height: normal;
 
-}
-
-.portfolio-item a {
-	text-decoration: none;
-	color: inherit;
-	font-weight: bold;
-	width: 100%;
-	padding: 0.2rem 1rem;
 }
 
 .portfolio-item-title {
-	width: 30%;
-	border: 2px solid black;
+	text-decoration: none;
+	color: var(--clr-light);
+	font-weight: bold;
+	width: 30%;	
+	text-shadow: 2px 2px solid var(--clr-dark);
 	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid black;
 }
+
 
 .portfolio-item-body {
 	width: 70%;
@@ -448,15 +454,13 @@ header {
 	padding: 0.2rem 1rem;
 }
 
-.portfolio-item:focus {
-	position: relative;
-	z-index: 2;
-}
-
-.portfolio-item a:hover,
-.portfolio-item:focus .portfolio-item a {
-	transform: scale(1.1);
-	opacity: .75;
+.portfolio-item-title:hover {
+	color: var(--clr-dark);
+	background: var(--clr-accent);
+	font-size: larger;
+	transition: 
+		background 1s,
+		font-size 1s;
 }
 
 @media (max-width:600px) {
@@ -466,8 +470,10 @@ header {
 	} 
 
 	.portfolio-item-title {
-		width: 100%;
 		border: 2px solid black;
+		background: var(--clr-accent);
+		color: var(--clr-dark);
+		width: 100%;
 	}
 	
 	.portfolio-item-body {

@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Projects from './components/Projects';
 
 function App() {
-  console.log("I see you are inspecting this page...👮 if you have any questions or advice to improve it, I will be very happy to receive your message! 📬marta@martacamacho.com")
+  console.log("I see you are inspecting this page...👮 if you have any questions or advice to improve it, I will be very happy to receive your message! 📬 contacto@martacamacho.com")
 
   return (
     <div className="root">
@@ -17,7 +17,7 @@ function App() {
             Hello, I am <strong>Marta Camacho</strong>
           </h1>
             <p className="section-subtitle section-subtitle-intro">Full Stack Developer</p>
-            <img className="intro-img" src="/images/FotoIH.jpg" alt="me" />
+            <img className="intro-img" src="./images/FotoIH.jpg" alt="me" />
       </section>
 
       <section className="my-services" id="what-i-do">
