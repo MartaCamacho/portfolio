@@ -21,8 +21,8 @@
 	--fs-h3: 1.25rem;
 	--fs-body: 1rem;
 
-	--bs: 0.25em 0.25em 0.75em rgba(0,0,0,25),
-		  0.125em 0.125em 0.25em rgba(0,0,0,25);
+	--bs: 0.25rem 0.25rem 0.75rem 0.15rem #888888,
+		  0.125rem 0.125rem 0.25rem 0.15rem #888888;
 }
 
 @media (min-width: 1000px) {
@@ -370,7 +370,7 @@ header {
 		grid-column-gap: 2em;
 	}
 
-	.about-me-img {
+	.about-me-image {
 		box-shadow: var(--bs);
 	}
 
@@ -482,6 +482,11 @@ header {
 		border: 2px solid black;
 		border-top: none;
 		padding: 0.2rem 1rem;
+	}
+
+	.portfolio-item-title:hover {
+		font-size: var(--fs-body);
+		transition: none
 	}
 }
 

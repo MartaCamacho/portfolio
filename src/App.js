@@ -17,7 +17,7 @@ function App() {
             Hello, I am <strong>Marta Camacho</strong>
           </h1>
             <p className="section-subtitle section-subtitle-intro">Full Stack Developer</p>
-            <img className="intro-img" src="./images/FotoIH.jpg" alt="me" />
+            <img className="intro-img" src="/images/FotoIH.jpg" alt="me" />
       </section>
 
       <section className="my-services" id="what-i-do">
@@ -68,7 +68,7 @@ function App() {
             </p>
             
           </div>
-          <img className="about-me-image" src="/images/FotoIH.jpg" alt=""/>
+          {/* <img className="about-me-image" src="/images/FotoIH.jpg" alt=""/> */}
       </section>
 
 
