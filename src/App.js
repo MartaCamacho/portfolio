@@ -2,10 +2,28 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
+import React, { Component } from 'react';
 
-function App() {
-  console.log("I see you are inspecting this page...👮 if you have any questions or advice to improve it, I will be very happy to receive your message! 📬 contacto@martacamacho.com")
+export default class App extends Component  {
+  constructor(props) {
+    super(props);
+    this.state = {
+      arrayPics: [
+      "../images/vertical-picture.jpg",
+      "../images/vertical-picture-2.jpg",
+      "../images/vertical-picture-3.jpg",
+      ]
+    };
+}
 
+  randomImage = () => {
+     const randomPic = Math.floor((Math.random()) * (this.state.arrayPics.length));
+     const objPic = this.state.arrayPics[randomPic];
+     return  objPic 
+  }
+
+  render() {
+    console.log("I see you are inspecting this page...👮 if you have any questions or advice to improve it, I will be very happy to receive your message! 📬 contacto@martacamacho.com")
   return (
     <div className="root">
       <header>
@@ -68,7 +86,7 @@ function App() {
             </p>
             
           </div>
-          {/* <img className="about-me-image" src="/images/FotoIH.jpg" alt=""/> */}
+          <img className="about-me-image" src={this.randomImage()} alt=""/>
       </section>
 
 
@@ -79,5 +97,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+}
