@@ -262,6 +262,12 @@ header {
 
 .intro-img {
 	box-shadow: var(--bs);
+	filter: brightness(130%)
+	saturate(120%);
+}
+
+.intro-img-surprise {
+	display: none;
 }
 
 .section-subtitle-intro {
@@ -282,9 +288,28 @@ header {
 
 	.intro-img {
 		grid-area: img;
-		min-width: 250px;
+		min-width: 200px;
 		position: relative;
 		z-index: 2;
+	}
+
+	.intro-img:hover {
+		z-index: 1;
+	}
+
+	.intro-img-surprise {
+		display: unset;
+		z-index: 1;
+		grid-area: img;
+		min-width: 200px;
+		position: relative;
+		filter: brightness(130%)
+	saturate(120%);
+	}
+	.intro-img-surprise:hover {
+		z-index: 2;
+		filter: brightness(130%)
+	saturate(120%);
 	}
 
 	.section-subtitle-intro {
@@ -428,7 +453,7 @@ header {
 	margin: 0.5rem;
 	vertical-align: middle;
     line-height: normal;
-
+	border: 2px solid black;
 }
 
 .portfolio-item-title {
@@ -441,7 +466,6 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid black;
 }
 
 
@@ -449,7 +473,7 @@ header {
 	width: 70%;
 	text-align: justify;
 	border: 2px solid black;
-	border-left: none;
+	border-left: 2px solid black;
 	height: 100%;
 	padding: 0.2rem 1rem;
 }

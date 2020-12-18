@@ -36,6 +36,7 @@ export default class App extends Component  {
           </h1>
             <p className="section-subtitle section-subtitle-intro">Full Stack Developer</p>
             <img className="intro-img" src="/images/FotoIH.jpg" alt="me" />
+            <img className="intro-img-surprise" src="/images/hoverImage.jpg" alt="me" />
       </section>
 
       <section className="my-services" id="what-i-do">
