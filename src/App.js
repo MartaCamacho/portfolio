@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Projects from './components/Projects';
 import React, { Component } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
 export default class App extends Component  {
   constructor(props) {
@@ -30,7 +33,7 @@ export default class App extends Component  {
         <Navbar />
       </header>
 
-      <section className="intro" id="home">
+      <section className="intro" data-aos="fade-left" data-aos-duration="1000" id="home">
           <h1 className="section-title section-title-intro">
             Hello, I am <strong>Marta Camacho</strong>
           </h1>
@@ -39,7 +42,7 @@ export default class App extends Component  {
             <img className="intro-img-surprise" src="/images/hoverImage.jpg" alt="me" />
       </section>
 
-      <section className="my-services" id="what-i-do">
+      <section className="my-services" data-aos="fade-left" data-aos-duration="3000" id="what-i-do">
         <h2 className="section-title section-title-services"> What I do</h2>
             <div className="services">
               <div className="service">
@@ -63,7 +66,7 @@ export default class App extends Component  {
           <a href="https://bit.ly/3lWiuzv" className="btn" target="_blank" rel="noreferrer">CV</a>
       </section>
             
-      <section className="about-me" id="about">
+      <section className="about-me" data-aos="fade-left" data-aos-duration="2000" id="about">
           <h2 className="section-title section-title-about">About me</h2>
           <p className="section-subtitle section-subtitle-about">Developer based in Barcelona</p>
           <div className="about-me-body">

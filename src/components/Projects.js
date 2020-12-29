@@ -22,7 +22,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div>
-                <section className="my-work" id="work">
+                <section className="my-work" data-aos="fade-left" data-aos-duration="2000" id="work">
                     <h2 className="section-title section-title-work">My projects</h2>
                     <p className="section-subtitle section-subtitle-work">Check out my work!</p>
                     <div className="portfolio" >
