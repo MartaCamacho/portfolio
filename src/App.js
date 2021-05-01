@@ -82,11 +82,13 @@ export default class App extends Component  {
             (and that many times we do not take into account when something is not 
             delivered correctly/on time). 
             <br/><br/>
-            This year I decided to do a career change, I have stopped and thought about 
+            On 2020 I decided to do a career change, I have stopped and thought about 
             what I wanted now, and I realized that I love developing and I see myself 
             doing this in the future, time flies when I am doing it and I am interested 
             and entertained as well, so I decided to do a bootcamp and acquire the necessary 
             knowledge to begin my path as a full stack developer 🚀
+            <br/><br/>
+            Nowadays I am working as a frontend developer since February 2021, and I love it!
             </p>
             
           </div>
